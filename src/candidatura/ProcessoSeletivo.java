@@ -8,9 +8,25 @@ public class ProcessoSeletivo {
 //		analisarCandidato(1900.0);
 //		analisarCandidato(2200.0);
 //		analisarCandidato(2000.0);
-		selecaoCandidatos();
+//		selecaoCandidatos();
+		imprimirSelecionados();
 		
 	}
+	
+	static void imprimirSelecionados() {
+		String [] candidatos = {"Felipe","Marcia","Julia","Paulo","Augusto"};
+		System.out.println("Imprimindo a lista de candidatos informando o indice do elemento");
+		for(int indice= 0 ; indice < candidatos.length;indice++) {
+			System.out.println("O candidat de numero " + indice + " é " + candidatos[indice]);
+		}
+		
+		System.out.println("Forma abreviada de iteração for each");
+		
+		for(String candidato : candidatos) {
+			System.out.println("O candidato selecionado é : " + candidato);
+		}
+	}
+	
 	static void selecaoCandidatos() {
 		String [] candidatos = {"Felipe","Marcia","Julia","Paulo","Augusto","Monica","Fabricio","Maria","Daniel","Marcelo"};
 		int candidatosSelecionados = 0;
